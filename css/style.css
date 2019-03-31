@@ -1,9 +1,40 @@
 body {
-    margin: 1em 1em;
     background-color: #202020;
     color: #ffffff
 }
 
+.container {
+    margin-top: 1.5em;
+}
+
+h1 {
+    font-size: 2.5rem !important;
+    margin: initial !important
+}
+
+fieldset {
+    border-style: initial !important;
+    margin: 1rem !important;
+    padding: 0 !important;
+}
+
 legend {
     font-size: 1.2em;
+}
+
+#api_error {
+    display: none;
+}
+
+form button.btn {
+    vertical-align: bottom;
+    margin-right: 1em;
+}
+
+#spinner {
+    display: none;
+}
+
+#openweathermap-widget-15 {
+    margin: 1em auto;
 }

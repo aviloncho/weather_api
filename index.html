@@ -9,9 +9,9 @@
     <title>Weather App</title>
 </head>
 <body>
-    <article class="container">
+    <article class="container" id="main_container">
         <h1>Welcome to Weather App!</h1>
-        <form>
+        <form action="javascript:void(0);" onsubmit="getWeather()">
             <fieldset class="form-group">
                 <legend>Search by city:</legend>
                 <div class="form-check">
@@ -26,7 +26,11 @@
             <div class="form-group">
                 <input type="text" name="city" id="city" class="form-control">
             </div>
+            <div class="alert alert-danger" role="alert" id="api_error"></div>
             <button type="button" class="btn btn-primary" onclick="getWeather()">Show Weather</button>
+            <div class="spinner-border text-primary" role="status" id="spinner">
+                <span class="sr-only">Loading...</span>
+            </div>
         </form>
 
         <div id="openweathermap-widget-15"></div>
